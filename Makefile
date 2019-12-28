@@ -1,6 +1,7 @@
 -include env_make
 
-PYTHON_VER ?= 3.6.5
+ALPINE_VER ?= 3.8
+PYTHON_VER ?= 3.6
 
 REPO = charlessoft/python
 NAME = python-$(PYTHON_VER)
@@ -29,6 +30,7 @@ default: build
 
 build:
 	docker build -t $(REPO):$(TAG) \
+		--build-arg ALPINE_VER=$(ALPINE_VER) \
 		--build-arg PYTHON_VER=$(PYTHON_VER) \
 		--build-arg PYTHON_DEV=$(PYTHON_DEV) \
 		./

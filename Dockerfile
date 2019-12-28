@@ -4,7 +4,8 @@
 # PLEASE DO NOT EDIT IT DIRECTLY.
 #
 # FROM charlessoft/alpine:${ALPINE_VER}
-FROM charlessoft/alpine:3.10
+ARG ALPINE_VER
+FROM charlessoft/alpine:${ALPINE_VER}
 
 # ensure local python is preferred over distribution python
 ENV PATH /usr/local/bin:$PATH
