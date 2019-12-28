@@ -6,7 +6,6 @@ services:
 env:
   matrix:
   - ALPINE_VER=3.11.2 PYTHON_VER=3.6.5 TAGS=3.6,3,latest
-  - ALPINE_VER=3.10.3 PYTHON_VER=3.6.5 TAGS=3.6
 
 script:
 - make 
