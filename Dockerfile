@@ -3,7 +3,6 @@
 #
 # PLEASE DO NOT EDIT IT DIRECTLY.
 #
-# FROM charlessoft/alpine:${ALPINE_VER}
 ARG ALPINE_VER
 FROM charlessoft/alpine:${ALPINE_VER}
 
