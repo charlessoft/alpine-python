@@ -3,7 +3,7 @@
 ALPINE_VER ?= 3.8
 PYTHON_VER ?= 3.6
 
-REPO = charlessoft/python
+REPO = charlessoft/alpine-python
 NAME = python-$(PYTHON_VER)
 
 ifneq ($(STABILITY_TAG),)
