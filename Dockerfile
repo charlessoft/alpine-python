@@ -15,9 +15,9 @@ ENV LANG C.UTF-8
 
 ARG ALPINE_VER
 ARG PYTHON_VERSION
-ENV ALPINE_VER 3.10
-ENV PYTHON_VERSION 3.7.6
-ENV PYTHON_DEV 1
+# ENV ALPINE_VER 3.10
+# ENV PYTHON_VERSION 3.7.6
+# ENV PYTHON_DEV 1
 
 # install ca-certificates so that HTTPS works consistently
 # other runtime dependencies for Python are installed later
