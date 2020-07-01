@@ -5,7 +5,7 @@ services:
 
 env:
   matrix:
-  - ALPINE_VER=3.11 PYTHON_VERSION=3.7 TAGS=3.7,3,latest
+  - ALPINE_VER=3.11 PYTHON_VERSION=3.7.6 TAGS=3.7,3,latest
   - ALPINE_VER=3.11 PYTHON_VERSION=3.6.5 TAGS=3.6
 
 script:
