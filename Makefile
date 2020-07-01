@@ -1,10 +1,10 @@
 -include env_make
 
 ALPINE_VER ?= 3.8
-PYTHON_VER ?= 3.6
+PYTHON_VERSION ?= 3.6.5
 
 REPO = charlessoft/alpine-python
-NAME = python-$(PYTHON_VER)
+NAME = python-$(PYTHON_VERSION)
 
 ifneq ($(STABILITY_TAG),)
     ifneq ($(TAG),latest)
@@ -14,9 +14,9 @@ endif
 
 ifeq ($(TAG),)
     ifneq ($(PYTHON_DEV),)
-    	TAG ?= $(PYTHON_VER)-dev
+    	TAG ?= $(PYTHON_VERSION)-dev
     else
-        TAG ?= $(PYTHON_VER)
+        TAG ?= $(PYTHON_VERSION)
     endif
 endif
 
@@ -31,7 +31,7 @@ default: build
 build:
 	docker build -t $(REPO):$(TAG) \
 		--build-arg ALPINE_VER=$(ALPINE_VER) \
-		--build-arg PYTHON_VER=$(PYTHON_VER) \
+		--build-arg PYTHON_VERSION=$(PYTHON_VERSION) \
 		--build-arg PYTHON_DEV=$(PYTHON_DEV) \
 		./
 
