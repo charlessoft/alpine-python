@@ -50,7 +50,7 @@ sklearn==0.0
 tabulate==0.8.1
 tqdm==4.19.4
 tzlocal==1.4
-ujson==1.35
+ujson==5.4.0
 urllib3==1.22
 virtualenv==15.1.0
 xlrd==1.1.0
